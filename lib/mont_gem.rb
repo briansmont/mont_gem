@@ -41,7 +41,7 @@ class MontGem
   end
   
   def create_message(sender_email, recipient_id, subject, message)
-    response = self.class.get(bloc_api_url("messages"), body: {"sender": sender_email, "recipient_id": recipient_id, "subject": subject, "stripped-text": message}, headers: {"authorization" => @auth_token })
+    response = self.class.post(bloc_api_url("messages"), body: {"sender": sender_email, "recipient_id": recipient_id, "subject": subject, "stripped-text": message}, headers: {"authorization" => @auth_token })
     puts response
   end
   
