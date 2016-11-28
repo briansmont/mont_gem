@@ -45,8 +45,8 @@ class MontGem
     puts response
   end
   
-  def create_submissions(checkpoint_id, assignment_branch, assignment_commit_link, comment)
-    response = self.class.post(bloc_api_url("checkpoint_submissions"), body: {"checkpoint_id": checkpoint_id, "assignment_branch": assignment_branch, "assignment_commit_link": assignment_commit_link, "comment": comment}, headers: {"authorization" => @auth_token})
+  def create_submissions(checkpoint_id, enrollment_id, assignment_branch, assignment_commit_link, comment)
+    response = self.class.post(bloc_api_url("checkpoint_submissions"), body: {"checkpoint_id": checkpoint_id, "enrollment_id": enrollment_id, "assignment_branch": assignment_branch, "assignment_commit_link": assignment_commit_link, "comment": comment}, headers: {"authorization" => @auth_token})
     puts response
   end
   
