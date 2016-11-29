@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions
+    body:
+      encoding: UTF-8
+      string: email=<EMAIL>&password=<PASSWORD>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 29 Nov 2016 17:54:03 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"afc58a3c4f8fe04b02aba81b62a691a0"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=V7Jz9PF1%2BInj6gbO4bNNUjtQLBeBmkdMYo2Ncy13AAs%3D; path=/; secure
+      - _BlocAlpha_session2=UzVvT0R1Z1FZaXRxRUh6b1RLRmxXcmRFVEtaNW8yVzc1dnlFZFlOZDQzRXZ1MTRUb3dwbjJMTHFIMUhqSC8yeXI2ZWFMalhDNXM2NFJOT0crREtzeHZCVEFxeWNXUjYyZkMvQjRwWmhDRUwwZzNpNG54VnlTNmlIMGg1MkFDYk9XQkloaWppYjBrSDhBN3RpUHdhNVZpNWoydFk0a0lKVXpXYjdTOGJsSm1hTmNiVW9EeFpYL1Erazc1S1NDNVNyS3p0Tjc4bkZwckFXS1FKakQxS3Mydz09LS04blRJaVNjeGxDZ2VxeU50dzVrZldBPT0%3D--65e0cd14a73d475467f1f6672e1dc729e4fa5239;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_visit=478d90d8-b96c-4013-913e-84ec34817541; path=/; expires=Tue, 29 Nov
+        2016 21:54:03 -0000; secure
+      - ahoy_visitor=ee1a6ca2-c42a-458a-b62c-4c807be6dea8; path=/; expires=Thu, 29
+        Nov 2018 17:54:03 -0000; secure
+      X-Request-Id:
+      - cb907a3b-7696-426d-9451-cf1e104e40e1
+      X-Runtime:
+      - '0.127761'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiOThjOGQyZDFiZmNkNDVhMDliNGUyMDlhMWYwNTYzMTkiLCJ1c2VyX2lkIjoyMzQxNjQ0LCJuYW1lIjoiQnJpYW4gTW9udCJ9.roYsdOdvC0CtFRrT3iIZbqRIrj-efEYjjmEmPzgqV94","user":{"id":2341644,"email":"briansmont830@gmail.com","created_at":"2016-05-16T10:59:14.469-04:00","updated_at":"2016-11-29T12:53:04.980-05:00","facebook_id":null,"first_name":"Brian","last_name":"Mont","role":"user","stripe_customer_id":"cus_8SicnDo4pon3Fs","twitter_handle":null,"skype_handle":"brian.s.mont","github_handle":"briansmont","time_zone":"Eastern
+        Time (US \u0026 Canada)","bio":null,"photo_file_name":"blocPic.png","photo_content_type":"image/png","photo_file_size":340886,"photo_updated_at":"2016-05-30T09:31:55.326-04:00","send_new_message_emails":true,"referred_by_id":null,"slug":"brian-mont","os":"Windows","last_seen_at":"2016-11-29T12:51:49.255-05:00","private_profile":false,"google_plus_id":null,"linkedin":"https://www.linkedin.com/in/brian-mont-a30<ROADMAP_ID>943","quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":4902,"phone_num":"201707<ROADMAP_ID>42","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":"briansmont830@gmail.com","student_profile_id":null,"birthdate":"1988-08-31","gender":"Male","first_visit_id":null,"codewars_handle":"briansmont"}}'
+    http_version: 
+  recorded_at: Tue, 29 Nov 2016 17:54:03 GMT
+recorded_with: VCR 3.0.3
