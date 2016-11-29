@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions
+    body:
+      encoding: UTF-8
+      string: email=<EMAIL>&password=<PASSWORD>
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 29 Nov 2016 17:54:07 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a6fbed00ae75724ac77c49e9b16e72d7"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=smGHzcf230aeVfwe2%2FaPpa28gxjgpw0V2TUAwpxh%2FDw%3D; path=/; secure
+      - _BlocAlpha_session2=MUdqZUJUQUFxTmtpNWhKS2UzNHo1d01oMGxGbGdoVEc0TmcxUTNrOVFwd2UvYmxZeFZKeHNUK3ZWbzBnTG5XTXFPT25WYzJqc0Y3TWdDUDVXcktRS2t0YnhuVXVsU0xWSm5LNG1RV0VJelNpdWxNRXdva1BIYjE4enFlQUt4aW5lVk83WDNJaWwyUlFhbHpiUW85MTkvV1ZuNGpXSGREb0FWaDVqSUxOcDBCYmF1Umh3NFFVbmVDejNDa1ZPRnJuaE12TWlLK1pXMFdHeE83OW9QN0JoQT09LS16QktCU1JtTnJmcWYwMTRzMFF6UXlRPT0%3D--befe492cc35b2515176db9e5954643b1f47a5cba;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=90674c6d-4577-4ab7-b47f-3e35850ec2be; path=/; expires=Tue, 29 Nov
+        2016 21:54:07 -0000; secure
+      - ahoy_visitor=b93c4f2d-fc2f-47c1-93f2-daa9f3cb4081; path=/; expires=Thu, 29
+        Nov 2018 17:54:07 -0000; secure
+      X-Request-Id:
+      - c582599b-1a5b-42e0-9c7e-50a36ffbaf89
+      X-Runtime:
+      - '0.100921'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiOThjOGQyZDFiZmNkNDVhMDliNGUyMDlhMWYwNTYzMTkiLCJ1c2VyX2lkIjoyMzQxNjQ0LCJuYW1lIjoiQnJpYW4gTW9udCJ9.roYsdOdvC0CtFRrT3iIZbqRIrj-efEYjjmEmPzgqV94","user":{"id":2341644,"email":"briansmont830@gmail.com","created_at":"2016-05-16T14:59:14.469Z","updated_at":"2016-11-29T17:54:04.934Z","facebook_id":null,"first_name":"Brian","last_name":"Mont","role":"user","stripe_customer_id":"cus_8SicnDo4pon3Fs","twitter_handle":null,"skype_handle":"brian.s.mont","github_handle":"briansmont","time_zone":"Eastern
+        Time (US \u0026 Canada)","bio":null,"photo_file_name":"blocPic.png","photo_content_type":"image/png","photo_file_size":340886,"photo_updated_at":"2016-05-30T13:31:55.326Z","send_new_message_emails":true,"referred_by_id":null,"slug":"brian-mont","os":"Windows","last_seen_at":"2016-11-29T17:54:04.870Z","private_profile":false,"google_plus_id":null,"linkedin":"https://www.linkedin.com/in/brian-mont-a30<ROADMAP_ID>943","quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":4902,"phone_num":"201707<ROADMAP_ID>42","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":"briansmont830@gmail.com","student_profile_id":null,"birthdate":"1988-08-31","gender":"Male","first_visit_id":null,"codewars_handle":"briansmont"}}'
+    http_version: 
+  recorded_at: Tue, 29 Nov 2016 17:54:07 GMT
+- request:
+    method: get
+    uri: https://www.bloc.io/api/v1/checkpoints/<CHECKPOINT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiOThjOGQyZDFiZmNkNDVhMDliNGUyMDlhMWYwNTYzMTkiLCJ1c2VyX2lkIjoyMzQxNjQ0LCJuYW1lIjoiQnJpYW4gTW9udCJ9.roYsdOdvC0CtFRrT3iIZbqRIrj-efEYjjmEmPzgqV94
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 29 Nov 2016 17:54:07 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"67468c16fcf0e0ce5bc8c2b0c6b73a18"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=WySySIFNyioDhDzhcttbPO2Cg6BD%2Bchz3hbOkXX4kjU%3D; path=/; secure
+      - _BlocAlpha_session2=RXZCL2NidDQ1NjlOTWVWMkt4SjBYVS8xc1FzNC9pYUxHQk5zekQ2UFB3aDIwTEM0cjZScGZMVVRyTlNoY1MrUFNSaE5YSzhSYU9vcmpROUFYRC90aUVTcWU4QlVHejNLUWZ1T2thcWROOGp1UjB5emNkQzZMTlgxN1N0S0IyclhlU2ZPNXN1SXlLZlN1UWl0N1pkenpzZkg2MzAxSXpJazl2bHlWazFPUlI5VWxBS2RrLzN4bVlNZEJuMFJ2TExjWC8rdUh1bCtBc29Gd2sxNDVPYUNtK0NidThlMkV5OHdybDBKdDBtaUg5eklxT1lKSlJHSVRabWRVeDJHcUc3dG1kSjFVVmk0QUpKZ1hubEtMUXhmdU9wbFlDMERZcEtXdHlTYTVRTGdTT1dsZGNtQkpQRzBPN0lZMWNVTklYanctLUtwL0kweEpLNjZabTNuaXo5bk11aVE9PQ%3D%3D--40bf6dc160995642c8699ef1465d45575c4917c1;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=d7d239b0-f282-4219-b215-2076b88aa341; path=/; expires=Tue, 29 Nov
+        2016 21:54:08 -0000; secure
+      - ahoy_visitor=6cb78e62-0501-4d3e-8990-368919aae89a; path=/; expires=Thu, 29
+        Nov 2018 17:54:08 -0000; secure
+      X-Request-Id:
+      - 3e2f6aff-ec4a-49e5-aed6-3a345fca6bee
+      X-Runtime:
+      - '0.271452'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":<CHECKPOINT_ID>,"name":"Create Wireframes and Mockups","body":"","parent_id":null,"created_at":"2016-05-11T22:16:26.429Z","updated_at":"2016-05-11T22:16:26.429Z","assignment":"","summary":"Design
+        your Capstone''s user interface","points":1,"project_name":"","roadmap_id":null,"active":true,"job_prep":false,"version":[0,0],"body_file_path":"","uuid":"3913bab7-5fc1-4b50-b2c7-cb9ec49ffae8","ref":"3913bab7-5fc1-4b50-b2c7-cb9ec49ffae8|0","retroactive_optional_date":null,"checkpoint_type":"normal","quiz_id":null}'
+    http_version: 
+  recorded_at: Tue, 29 Nov 2016 17:54:08 GMT
+recorded_with: VCR 3.0.3
